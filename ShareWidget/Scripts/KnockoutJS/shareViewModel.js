@@ -1,7 +1,5 @@
-﻿var shareViewModel = shareViewModel || {};
-
-var shareViewModel = {
-    orderid: ko.observable("1234"),
+﻿var shareViewModel = {
+    OrderId: ko.observable("1234"),
     lastName: ko.observable("Smith"),
     products: ko.observableArray(["Cat", "Dog", "Fish"]),
     type: "Share"
