@@ -72,6 +72,9 @@
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\ShareProductsViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="Content\BGS\BGS_no.css" />
+    <Content Include="Content\BGS\HTMLPage1.htm" />
+    <Content Include="Content\BGS\screen.css" />
     <Content Include="Scripts\ShareWidget\shareWidget.js" />
   </ItemGroup>
   <ItemGroup>
