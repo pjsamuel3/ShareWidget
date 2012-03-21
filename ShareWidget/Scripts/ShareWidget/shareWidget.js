@@ -15,5 +15,5 @@ shareWidget.mapProductsToViewModel = function (products) {
 };
 
 $(document).ready(function () {
-    shareWidget.getOrderItems("1234");
+    shareWidget.getOrderItems("456789");
 });
