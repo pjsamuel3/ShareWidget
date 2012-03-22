@@ -1,7 +1,7 @@
 ﻿var shareWidget = shareWidget || {};
 shareWidget.productsToShareUrl = "/Order/ShareProducts/";
 
-shareWidget.getOrderItems = function (orderId) {
+shareWidget.getOrderedProducts = function (orderId) {
     $.getJSON(shareWidget.productsToShareUrl + orderId, function (data) {
         shareWidget.mapProductsToViewModel(data);
     });
@@ -15,5 +15,6 @@ shareWidget.mapProductsToViewModel = function (products) {
 };
 
 $(document).ready(function () {
-    shareWidget.getOrderItems("456789");
+    $("#social_choices_tabs").tabs();
+    shareWidget.getOrderedProducts("456789");
 });
