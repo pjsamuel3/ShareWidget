@@ -36,6 +36,12 @@ namespace ShareWidget.Controllers
                                                                Name = "Product 2",
                                                                Description = "Description two is even longer",
                                                                Image = "/Content/Images/Prod2.jpg"
+                                                           },
+                                                       new Product
+                                                           {
+                                                               Name = "Product 3",
+                                                               Description = "Description three is sh...",
+                                                               Image = "/Content/Images/Prod3.jpg"
                                                            }
                                                    }
                                 };
