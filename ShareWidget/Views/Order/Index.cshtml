@@ -5,6 +5,12 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+@section Meta {
+    <meta property="og:title" content="Title of the product" /> 
+    <meta property="og:description" content="Description of a product " /> 
+    <meta property="og:image" content="http://www.biggreensmile.no/shop/images/products/MBOWLPATROL_dept.jpg?t=1225540350" />
+}
+
 @section Script
 {
     <script src="@Url.Content("~/Scripts/KnockoutJS/shareViewModel.js")" type="text/javascript"> </script>
@@ -32,8 +38,42 @@
     </div>
 </div>
 
-<div>
+@*<div>
     <ul data-bind="foreach: Products">
         <li data-bind="text: Name"></li>
     </ul>
+</div>*@
+
+<p>
+    Your product: 
+    <select data-bind="options: Products, 
+                   optionsText: function(item) { 
+                       return item.Name
+                   }, 
+                   value: SelectedProduct, 
+                   optionsCaption: 'Choose...'"></select>
+</p>
+ 
+<div data-bind="visible: SelectedProduct"> <!-- Appears when you select something -->
+    You have chosen a product with the name
+    <span data-bind="text: SelectedProduct() ? SelectedProduct().Name : 'unknown'"></span>
 </div>
+
+<a name="fb_share" type="icon_link" share_url="http://www.biggreensmile.no/products/method-eau-de-toilettes-toalettrens/mbowlpatrol.aspx?productid=mbowlpatrol">Share to facebook</a>
+<script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" 
+        type="text/javascript"> </script>
+        
+        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-text="Hello BGS">Tweet</a>
+<script type="text/javascript">    !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } } (document, "script", "twitter-wjs");</script>
+
+<span class='st_sharethis_large' displayText='ShareThis'></span>
+<span class='st_facebook_large' displayText='Facebook'></span>
+<span class='st_twitter_large' displayText='Tweet'></span>
+<span class='st_amazon_wishlist_large' displayText='Amazon Wishlist'></span>
+<span class='st_delicious_large' displayText='Delicious'></span>
+<span class='st_linkedin_large' displayText='LinkedIn'></span>
+<span class='st_email_large' displayText='Email'></span>
+
+<script type="text/javascript"> var switchTo5x = false; </script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"> </script>
+<script type="text/javascript"> stLight.options({ publisher: "ur-f0b9cd52-d31-7697-b796-5fd7440e920" }); </script>

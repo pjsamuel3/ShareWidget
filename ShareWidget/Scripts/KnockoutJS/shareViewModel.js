@@ -1,10 +1,20 @@
 ﻿var shareViewModel = {
-    OrderId: ko.observable("1234"),
-    lastName: ko.observable("Smith"),
-    products: ko.observableArray(["Cat", "Dog", "Fish"]),
-    type: "Share"
+    OrderId: ko.observable("000000"),
+    ShareUrl: ko.observable("http://www.biggreensmile.com"),
+    Products: ko.observableArray(["Ham","Eggs"]),
+    type: "Share",
+    
+    SelectedProduct: ko.observable("000000")
 };
 
-shareViewModel.hasALotOfProducts = ko.computed(function () {
-    return this.products().length > 2;  
-}, shareViewModel)
+shareViewModel.totalProductsInOrder = ko.computed(function() {
+    return this.Products().length;
+}, shareViewModel);
+
+//shareViewModel.selectedProduct = ko.computed(function () {
+//    return this.Products().length;
+//}, shareViewModel);
+
+
+
+
