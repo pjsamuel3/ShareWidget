@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Web;
 using System.Web.Mvc;
 using ShareWidget.Models;
@@ -18,8 +19,10 @@ namespace ShareWidget.Controllers
             return View(viewModel);
         }
 
+    [OutputCache(NoStore = true, Duration = 0)]
         public ActionResult ShareProducts(string id)
         {
+            //Thread.Sleep(1500);
             var viewModel = new ShareProductsViewModel
                                 {
                                     OrderId = id,
@@ -44,6 +47,13 @@ namespace ShareWidget.Controllers
                                                                 Id = "prod3",
                                                                Name = "Product 3",
                                                                Description = "Description three is short",
+                                                               Image = "/Content/BGS/Images/Prod3.jpg"
+                                                           },
+                                                       new Product
+                                                           {
+                                                                Id = "prod4",
+                                                               Name = "Product 4",
+                                                               Description = "Description four is short",
                                                                Image = "/Content/BGS/Images/Prod3.jpg"
                                                            }
                                                    },

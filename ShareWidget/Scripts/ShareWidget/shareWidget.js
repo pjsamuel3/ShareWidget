@@ -9,7 +9,7 @@ shareWidget.getOrderedProducts = function (orderId) {
 
 shareWidget.mapProductsToViewModel = function (order) {
     //var viewModel = (ko.toJS(products));
-    console.log(order);
+    //console.log(order);
     //var parsed = JSON.parse(products);
 
     shareViewModel.Products(order.Products);
@@ -27,9 +27,10 @@ $(document).ready(function () {
 
 $(document).on("click", "a.product-selector", function (e) {
     e.preventDefault();
-    var clickedProduct = $(this).attr("href").replace("#","");
+    var clickedProduct = $(this).attr("href").replace("#", "");
 
-    console.log(clickedProduct);
+    //console.log(clickedProduct);
 
     shareViewModel.SelectedProduct(clickedProduct);
+    twttr.widgets.load();
 });

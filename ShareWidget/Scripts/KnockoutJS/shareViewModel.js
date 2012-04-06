@@ -4,7 +4,7 @@
     Products: ko.observableArray([{ Name: "Ham", Id: "1"}]),
     type: "Share",
 
-    SelectedProduct: ko.observable("000000")
+    SelectedProduct: ko.observable()
 };
 
 shareViewModel.totalProductsInOrder = ko.computed(function() {
@@ -23,6 +23,18 @@ shareViewModel.currentItem = ko.computed(function () {
     return null;
 }, shareViewModel);
 
+
+//shareViewModel.nextItem = ko.computed(function () {
+//    var all = this.Products();
+//    var selected = this.SelectedProduct();
+
+//    for (var i = 0; i < all.length; i++)
+//        if (all[i].Id === selected) {
+//            return all[i];
+//        }
+
+//    return null;
+//}, shareViewModel);
 
 
 
