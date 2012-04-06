@@ -74,6 +74,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Content Include="Content\BGS\BGS_no.css" />
     <Content Include="Content\BGS\HTMLPage1.htm" />
+    <Content Include="Content\BGS\Images\prod3.jpg" />
+    <Content Include="Content\BGS\Images\prod2.jpg" />
+    <Content Include="Content\BGS\Images\prod1.jpg" />
     <Content Include="Content\BGS\screen.css" />
     <Content Include="Scripts\ShareWidget\shareWidget.js" />
   </ItemGroup>

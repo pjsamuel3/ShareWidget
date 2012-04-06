@@ -38,13 +38,27 @@
     </div>
 </div>
 
-@*<div>
-    <ul data-bind="foreach: Products">
-        <li data-bind="text: Name"></li>
-    </ul>
-</div>*@
+<div>
+    Total products in order: <span data-bind="text: shareViewModel.totalProductsInOrder()"></span>
+</div>
 
-<p>
+<div>
+    Current Item: <span data-bind="text: shareViewModel.currentItem().Name"></span>
+</div>
+
+<div>
+    <ul data-bind="foreach: Products">
+        <li>
+            <span data-bind="text: Name"></span>
+            <img data-bind="attr: { src: Image, alt: Description}"/>
+            <a class="product-selector" data-bind="attr: { href: ('#' + Id), title: Description }">
+    Select this item
+</a>
+        </li>
+    </ul>
+</div>
+
+@*<p>
     Your product: 
     <select data-bind="options: Products, 
                    optionsText: function(item) { 
@@ -52,11 +66,10 @@
                    }, 
                    value: SelectedProduct, 
                    optionsCaption: 'Choose...'"></select>
-</p>
+</p>*@
  
 <div data-bind="visible: SelectedProduct"> <!-- Appears when you select something -->
     You have chosen a product with the name
-    <span data-bind="text: SelectedProduct() ? SelectedProduct().Name : 'unknown'"></span>
 </div>
 
 <a name="fb_share" type="icon_link" share_url="http://www.biggreensmile.no/products/method-eau-de-toilettes-toalettrens/mbowlpatrol.aspx?productid=mbowlpatrol">Share to facebook</a>

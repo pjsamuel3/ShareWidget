@@ -30,21 +30,21 @@ namespace ShareWidget.Controllers
                                                                Id = "prod1",
                                                                Name = "Product 1",
                                                                Description = "Description one is a bit longer",
-                                                               Image = "/Content/Images/Prod1.jpg"
+                                                               Image = "/Content/BGS/Images/Prod1.jpg"
                                                            },
                                                        new Product
                                                            {
                                                                 Id = "prod2",
                                                                Name = "Product 2",
                                                                Description = "Description two is even longer",
-                                                               Image = "/Content/Images/Prod2.jpg"
+                                                               Image = "/Content/BGS/Images/Prod2.jpg"
                                                            },
                                                        new Product
                                                            {
                                                                 Id = "prod3",
                                                                Name = "Product 3",
                                                                Description = "Description three is short",
-                                                               Image = "/Content/Images/Prod3.jpg"
+                                                               Image = "/Content/BGS/Images/Prod3.jpg"
                                                            }
                                                    },
                                     SelectedProduct =

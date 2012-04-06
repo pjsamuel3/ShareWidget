@@ -7,14 +7,29 @@ shareWidget.getOrderedProducts = function (orderId) {
     });
 };
 
-shareWidget.mapProductsToViewModel = function (products) {
-    var viewModel = (ko.toJS(products));
+shareWidget.mapProductsToViewModel = function (order) {
+    //var viewModel = (ko.toJS(products));
+    console.log(order);
+    //var parsed = JSON.parse(products);
 
-    console.log(viewModel);
-    ko.applyBindings(viewModel);
+    shareViewModel.Products(order.Products);
+    shareViewModel.SelectedProduct(order.SelectedProduct);
+
+    ko.applyBindings(shareViewModel);
 };
 
 $(document).ready(function () {
     $("#social_choices_tabs").tabs();
     shareWidget.getOrderedProducts("456789");
+
+
+});
+
+$(document).on("click", "a.product-selector", function (e) {
+    e.preventDefault();
+    var clickedProduct = $(this).attr("href").replace("#","");
+
+    console.log(clickedProduct);
+
+    shareViewModel.SelectedProduct(clickedProduct);
 });
