@@ -1,0 +1,7 @@
+﻿#searchBar #currency { display: none; }
+
+#searchBar { background: url('../images/template/searchbarBG.no.gif') no-repeat top left; }
+
+#headerNav li { margin-left: 40px; }
+
+#headerNav li.first { margin-left: 30px; }
