@@ -37,27 +37,28 @@ shareWidget.setupImageFlip = function () {
         current: 1,
         beforeCss: function (el, container, offset) {
             return [
-                $.jcoverflip.animationElement(el, { left: (container.width() / 2 - 210 - 110 * offset + 20 * offset) + 'px', bottom: '20px' }, {}),
-                $.jcoverflip.animationElement(el.find('img'), { width: Math.max(10, 100 - 20 * offset * offset) + 'px' }, {})
+                $.jcoverflip.animationElement(el, { left: (container.width() / 2 - 220 - 110 * offset + 20 * offset) + 'px', bottom: '20px' }, {}),
+                $.jcoverflip.animationElement(el.find('img'), { width: Math.max(10, 100 - 20 * offset * offset) + 'px', opacity: 0.5 }, {})
             ];
         },
         afterCss: function (el, container, offset) {
             return [
-                $.jcoverflip.animationElement(el, { left: (container.width() / 2 + 110 + 110 * offset) + 'px', bottom: '20px' }, {}),
-                $.jcoverflip.animationElement(el.find('img'), { width: Math.max(10, 100 - 20 * offset * offset) + 'px' }, {})
+                $.jcoverflip.animationElement(el, { left: (container.width() / 2 + 10 + 110 * offset) + 'px', bottom: '20px' }, {}),
+                $.jcoverflip.animationElement(el.find('img'), { width: Math.max(10, 100 - 20 * offset * offset) + 'px', opacity: 0.5 }, {})
             ];
         },
         currentCss: function (el, container) {
             return [
                 $.jcoverflip.animationElement(el, { left: (container.width() / 2 - 100) + 'px', bottom: 0 }, {}),
-                $.jcoverflip.animationElement(el.find('img'), { width: '200px' }, {})
+                $.jcoverflip.animationElement(el.find('img'), { width: '110px', opacity: 1 }, {})
             ];
         },
         change: function (event, ui) {
             jQuery('#scrollbar').slider('value', ui.to * 25);
-            console.log(event);
-            console.log(ui);
-            console.log(jQuery('#share_products').jcoverflip('current'));
+            var currentItem = $('#share_products').jcoverflip('current');
+            console.log(currentItem);
+            var clickedProduct = $($('#share_products > li')[currentItem]).find("a").attr("href").replace("#", "");
+            shareViewModel.SelectedProduct(clickedProduct);
         }
     });
 

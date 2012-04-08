@@ -54,7 +54,7 @@ namespace ShareWidget.Controllers
                                                                 Id = "prod4",
                                                                Name = "Product 4",
                                                                Description = "Description four is short",
-                                                               Image = "/Content/BGS/Images/Prod3.jpg"
+                                                               Image = "/Content/BGS/Images/Prod4.jpg"
                                                            }
                                                    },
                                     SelectedProduct =
