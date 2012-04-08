@@ -49,16 +49,19 @@
     <div data-bind="text: shareViewModel.currentItem().Image"></div>
 </div>
 
-<div>
-    <ul data-bind="foreach: Products">
+<div id="share_products_wrapper">
+    <ul id="share_products" class="share-products" data-bind="foreach: Products">
         <li>
-            <span data-bind="text: Name"></span>
-            <img data-bind="attr: { src: Image, alt: Description}"/>
             <a class="product-selector" data-bind="attr: { href: ('#' + Id), title: Description }">
-    Select this item
-</a>
+                <img data-bind="attr: { src: Image, alt: Description}"/>
+                <span class="title" data-bind="text: Name"></span>
+            </a>
         </li>
     </ul>
+    
+    <div id="scrollbar" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
+        <a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a>
+    </div>
 </div>
 
 @*<p>
@@ -79,10 +82,18 @@
 <script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" 
         type="text/javascript"> </script>
         
-        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-bind="attr: {'data-text': shareViewModel.currentItem().Description}">Tweet</a>
-<script type="text/javascript">    !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } } (document, "script", "twitter-wjs");</script>
+<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-bind="attr: {'data-text': shareViewModel.currentItem().Description}">Tweet</a>
+<script type="text/javascript"> !function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (!d.getElementById(id)) {
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }
+}(document, "script", "twitter-wjs"); </script>
 
-<span class='st_sharethis_large' displayText='ShareThis'></span>
+@*<span class='st_sharethis_large' displayText='ShareThis'></span>
 <span class='st_facebook_large' displayText='Facebook'></span>
 <span class='st_twitter_large' displayText='Tweet'></span>
 <span class='st_amazon_wishlist_large' displayText='Amazon Wishlist'></span>
@@ -92,4 +103,4 @@
 
 <script type="text/javascript"> var switchTo5x = false; </script>
 <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"> </script>
-<script type="text/javascript"> stLight.options({ publisher: "ur-f0b9cd52-d31-7697-b796-5fd7440e920" }); </script>
+<script type="text/javascript"> stLight.options({ publisher: "ur-f0b9cd52-d31-7697-b796-5fd7440e920" }); </script>*@

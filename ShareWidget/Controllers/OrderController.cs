@@ -58,7 +58,7 @@ namespace ShareWidget.Controllers
                                                            }
                                                    },
                                     SelectedProduct =
-                                        "prod1"
+                                        "prod4"
                                 };
             return Json(viewModel, JsonRequestBehavior.AllowGet);
         }

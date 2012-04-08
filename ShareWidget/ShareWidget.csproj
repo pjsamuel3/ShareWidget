@@ -78,6 +78,8 @@
     <Content Include="Content\BGS\Images\prod2.jpg" />
     <Content Include="Content\BGS\Images\prod1.jpg" />
     <Content Include="Content\BGS\screen.css" />
+    <Content Include="Scripts\jquery-ui-1.7.2.js" />
+    <Content Include="Scripts\jquery.jcoverflip.js" />
     <Content Include="Scripts\ShareWidget\shareWidget.js" />
   </ItemGroup>
   <ItemGroup>
