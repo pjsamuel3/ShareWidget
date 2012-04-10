@@ -106,7 +106,7 @@ ul.share-products li span, ul.share-products li img, ul.share-products li a{
       
       /* Basic sample CSS */
       #share_products {
-        height: 350px;
+        height: 250px;
         width: 100%;
         margin-bottom: 50px;
       }
@@ -131,7 +131,7 @@ ul.share-products li span, ul.share-products li img, ul.share-products li a{
       
       
       #share_products_wrapper {
-        height: 500px;
+        height: 350px;
         width: 100%;
         overflow: hidden;
         position: relative;
@@ -143,7 +143,7 @@ ul.share-products li span, ul.share-products li img, ul.share-products li a{
       
       body {
         font-family: Arial, sans-serif;
-        width: 630px;
+        width: 500px;
         padding: 0;
         margin: 0;
       }

@@ -49,7 +49,14 @@
     <div data-bind="text: shareViewModel.currentItem().Image"></div>
 </div>
 
+<h3>
+    Share your big green purchase
+</h3>
+
 <div id="share_products_wrapper">
+    <div class="previous">
+        Previous
+    </div>
     <ul id="share_products" class="share-products" data-bind="foreach: Products">
         <li>
             <a class="product-selector" data-bind="attr: { href: ('#' + Id), title: Description }">
@@ -58,9 +65,8 @@
             </a>
         </li>
     </ul>
-    
-    <div id="scrollbar" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
-        <a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a>
+    <div class="next">
+        Next
     </div>
 </div>
 
