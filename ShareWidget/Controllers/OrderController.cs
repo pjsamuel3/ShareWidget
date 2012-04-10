@@ -19,9 +19,12 @@ namespace ShareWidget.Controllers
             return View(viewModel);
         }
 
-    [OutputCache(NoStore = true, Duration = 0)]
+        [OutputCache(NoStore = true, Duration = 0)]
         public ActionResult ShareProducts(string id)
         {
+            var url =
+                "http://www.biggreensmile.no/products/badger-winter-wonder-aromatic-chest-balm/badgchest21.aspx?productid=badgchest21";
+
             //Thread.Sleep(1500);
             var viewModel = new ShareProductsViewModel
                                 {
@@ -33,28 +36,40 @@ namespace ShareWidget.Controllers
                                                                Id = "prod1",
                                                                Name = "Product 1",
                                                                Description = "Description one is a bit longer",
-                                                               Image = "/Content/BGS/Images/Prod1.jpg"
+                                                               Image = "/Content/BGS/Images/Prod1.jpg",
+                                                               Url = url,
+                                                               EncodedUrl = Server.UrlEncode(url),
+                                                               ShortUrl = ""
                                                            },
                                                        new Product
                                                            {
-                                                                Id = "prod2",
+                                                               Id = "prod2",
                                                                Name = "Product 2",
                                                                Description = "Description two is even longer",
-                                                               Image = "/Content/BGS/Images/Prod2.jpg"
+                                                               Image = "/Content/BGS/Images/Prod2.jpg",
+                                                               Url = url,
+                                                               EncodedUrl = Server.UrlEncode(url),
+                                                               ShortUrl = ""
                                                            },
                                                        new Product
                                                            {
-                                                                Id = "prod3",
+                                                               Id = "prod3",
                                                                Name = "Product 3",
                                                                Description = "Description three is short",
-                                                               Image = "/Content/BGS/Images/Prod3.jpg"
+                                                               Image = "/Content/BGS/Images/Prod3.jpg",
+                                                               Url = url,
+                                                               EncodedUrl = Server.UrlEncode(url),
+                                                               ShortUrl = ""
                                                            },
                                                        new Product
                                                            {
-                                                                Id = "prod4",
+                                                               Id = "prod4",
                                                                Name = "Product 4",
                                                                Description = "Description four is short",
-                                                               Image = "/Content/BGS/Images/Prod4.jpg"
+                                                               Image = "/Content/BGS/Images/Prod4.jpg",
+                                                               Url = url,
+                                                               EncodedUrl = Server.UrlEncode(url),
+                                                               ShortUrl = ""
                                                            }
                                                    },
                                     SelectedProduct =

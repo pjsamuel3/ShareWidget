@@ -62,6 +62,9 @@
             <a class="product-selector" data-bind="attr: { href: ('#' + Id), title: Description }">
                 <img data-bind="attr: { src: Image, alt: Description}"/>
                 <span class="title" data-bind="text: Name"></span>
+                <span class="tweet-content" data-bind="text: Description"></span>
+                <span class="product-url" data-bind="text: EncodedUrl"></span>
+                <span class="encoded-url" data-bind="text: Url"></span>
             </a>
         </li>
     </ul>
@@ -89,15 +92,7 @@
         type="text/javascript"> </script>
         
 <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-bind="attr: {'data-text': shareViewModel.currentItem().Description}">Tweet</a>
-<script type="text/javascript"> !function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (!d.getElementById(id)) {
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "//platform.twitter.com/widgets.js";
-        fjs.parentNode.insertBefore(js, fjs);
-    }
-}(document, "script", "twitter-wjs"); </script>
+<script type="text/javascript">  </script>
 
 @*<span class='st_sharethis_large' displayText='ShareThis'></span>
 <span class='st_facebook_large' displayText='Facebook'></span>
