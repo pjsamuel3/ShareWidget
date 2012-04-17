@@ -1,234 +1,346 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/">
-    <head>
-        <link rel="stylesheet" type="text/css" href="https://www.biggreensmile.no/css/screen.css?v=16Mar12" id="css2"/>
-        <link rel="stylesheet" type="text/css" href="https://www.biggreensmile.no/css/bgs_no.css?v=20Jun11" id="Link1"/>
-        <title>
-            Ordrebekreftelse</title>
-    </head>
-    <body>
-        <div id="page">
-            <div id="hoverTrap" style="display: none;"><div id="ctl00_ctl00_htrapimg"><img src='https://www.biggreensmile.no/images/template/t.gif' width="800" height="800" onmouseover=" hideAllSubMenus() "/></div><img src='https://www.biggreensmile.no/images/template/t.gif' width="1" height="1"/></div>
-            <div id="header">
-                <div id="headerLogo">
-                    <a name="top" href='http://www.biggreensmile.no/'><img alt="BigGreenSmile.com" src='https://www.biggreensmile.no/images/template/headerLogo.gif'/></a>
-                </div>
-                <div id="ctl00_ctl00_divheaderAccount">
-                    <div id="headerAccount">
-                        <div class="headerCigarLeft"></div>
-                        <div id="headerAccountInner">
-                            Hei! <a href="https://www.biggreensmile.no/account/login.aspx">Logg inn</a> eller <a href="https://www.biggreensmile.no/account/create-account.aspx">åpne en ny konto</a>
-                        </div>
-                        <div class="headerCigarRight"></div>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml"
+xmlns:og="http://opengraphprotocol.org/schema/">
+<head>
+    <link rel="stylesheet" type="text/css" href="https://www.biggreensmile.no/css/screen.css?v=16Mar12"
+        id="css2" />
+    <link rel="stylesheet" type="text/css" href="https://www.biggreensmile.no/css/bgs_no.css?v=20Jun11"
+        id="Link1" />
+    <title>Ordrebekreftelse</title>
+</head>
+<body>
+    <div id="page">
+        <div id="hoverTrap" style="display: none;">
+            <div id="ctl00_ctl00_htrapimg">
+                <img src='https://www.biggreensmile.no/images/template/t.gif' width="800" height="800"
+                    onmouseover=" hideAllSubMenus() " /></div>
+            <img src='https://www.biggreensmile.no/images/template/t.gif' width="1" height="1" /></div>
+        <div id="header">
+            <div id="headerLogo">
+                <a name="top" href='http://www.biggreensmile.no/'>
+                    <img alt="BigGreenSmile.com" src='https://www.biggreensmile.no/images/template/headerLogo.gif' /></a>
+            </div>
+            <div id="ctl00_ctl00_divheaderAccount">
+                <div id="headerAccount">
+                    <div class="headerCigarLeft">
+                    </div>
+                    <div id="headerAccountInner">
+                        Hei! <a href="https://www.biggreensmile.no/account/login.aspx">Logg inn</a> eller
+                        <a href="https://www.biggreensmile.no/account/create-account.aspx">åpne en ny konto</a>
+                    </div>
+                    <div class="headerCigarRight">
                     </div>
                 </div>
-                <div id="ctl00_ctl00_divBasketSummary">
-                    <div id="headerBasketSummary">
-                        Handlekurven er tom
-                    </div>
+            </div>
+            <div id="ctl00_ctl00_divBasketSummary">
+                <div id="headerBasketSummary">
+                    Handlekurven er tom
                 </div>
-                <div id="headerNav">
-                    <ul>
-                        <li class="first"><a href='http://www.biggreensmile.no/'>Hjem</a></li>
-                        <li><a href='http://www.biggreensmile.no/aboutus.aspx'>Om Oss</a></li>
-                        <li><a href='http://www.biggreensmile.no/shop/department.aspx'>Produkter</a></li>
-                        <li><a href='http://www.biggreensmile.no/departments/tilbud.aspx?deptid=SPECIALOFFERS'>Tilbud</a></li>
-                        <li><a href='https://www.biggreensmile.no/account/secure/your-account.aspx'>Din Konto</a></li>
-                        <li><a href='http://www.biggreensmile.no/shop/basket.aspx'>Handlekurv</a><img src='https://www.biggreensmile.no/images/template/headerNavBasketIcon.gif' width="16" height="13" alt="Handlekurv"/></li>
-                    </ul>
-                </div>
-            </div> 
-            <form name="aspnetForm" method="post" action="/account/order-confirmation.aspx?o=290969&amp;ui=norskUI" id="aspnetForm">
-                <div>
-                    <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
-                </div>
-                <div>
-                    <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="8t4a8CLR6YGixaUBEIJkS7ILACVQSBfK/2jbHRoRYior6TGNSF1Fkd/vBaVSA02R7DP/avXmOZtNOoeW0oW1C8voHfttkwavfCY2C/vZJyCmfdTSjd+UmZ4IHdmHiDSyoe7peRBacLdLHhRf"/>
-                </div>
- 
-                <div id="searchBar">
-                    <div id="headerSearch">
-                        <table cellpadding="0" cellspacing="0">
-                            <tr valign="middle">
-                                <th>
-                                    Søk
-                                </th>
-                                <td valign="middle">
-                                    <input name="ctl00$ctl00$txtSearch" type="text" maxlength="30" id="ctl00_ctl00_txtSearch" class="txtSearch" onkeydown=" if (event.which || event.keyCode) {if ((event.which == 13) || (event.keyCode == 13)) {document.getElementById('ctl00_ctl00_btnSearch').click();return false;}} else {return true}; "/>
+            </div>
+            <div id="headerNav">
+                <ul>
+                    <li class="first"><a href='http://www.biggreensmile.no/'>Hjem</a></li>
+                    <li><a href='http://www.biggreensmile.no/aboutus.aspx'>Om Oss</a></li>
+                    <li><a href='http://www.biggreensmile.no/shop/department.aspx'>Produkter</a></li>
+                    <li><a href='http://www.biggreensmile.no/departments/tilbud.aspx?deptid=SPECIALOFFERS'>
+                        Tilbud</a></li>
+                    <li><a href='https://www.biggreensmile.no/account/secure/your-account.aspx'>Din Konto</a></li>
+                    <li><a href='http://www.biggreensmile.no/shop/basket.aspx'>Handlekurv</a><img src='https://www.biggreensmile.no/images/template/headerNavBasketIcon.gif'
+                        width="16" height="13" alt="Handlekurv" /></li>
+                </ul>
+            </div>
+        </div>
+        <form name="aspnetForm" method="post" action="/account/order-confirmation.aspx?o=290969&amp;ui=norskUI"
+        id="aspnetForm">
+        <div>
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+        </div>
+        <div>
+            <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="8t4a8CLR6YGixaUBEIJkS7ILACVQSBfK/2jbHRoRYior6TGNSF1Fkd/vBaVSA02R7DP/avXmOZtNOoeW0oW1C8voHfttkwavfCY2C/vZJyCmfdTSjd+UmZ4IHdmHiDSyoe7peRBacLdLHhRf" />
+        </div>
+        <div id="searchBar">
+            <div id="headerSearch">
+                <table cellpadding="0" cellspacing="0">
+                    <tr valign="middle">
+                        <th>
+                            Søk
+                        </th>
+                        <td valign="middle">
+                            <input name="ctl00$ctl00$txtSearch" type="text" maxlength="30" id="ctl00_ctl00_txtSearch"
+                                class="txtSearch" onkeydown=" if (event.which || event.keyCode) {if ((event.which == 13) || (event.keyCode == 13)) {document.getElementById('ctl00_ctl00_btnSearch').click();return false;}} else {return true}; " />
+                        </td>
+                        <td valign="middle">
+                            <input type="image" name="ctl00$ctl00$btnSearch" id="ctl00_ctl00_btnSearch" class="btnSearch"
+                                src="https://www.biggreensmile.no/images/template/btnGo.gif" alt="Søk" style="border-width: 0px;" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="ctl00_ctl00_currencyDiv">
+                <dl id="currency">
+                    <dt>Velg valuta: </dt>
+                    <dd>
+                        <input type="image" name="ctl00$ctl00$GBP" id="ctl00_ctl00_GBP" src="https://www.biggreensmile.no/images/template/currGBP_off.gif"
+                            alt="£" style="border-width: 0px;" /></dd>
+                    <dd>
+                        <input type="image" name="ctl00$ctl00$EUR" id="ctl00_ctl00_EUR" src="https://www.biggreensmile.no/images/template/currEUR_off.gif"
+                            alt="€" style="border-width: 0px;" /></dd>
+                    <dd>
+                        <input type="image" name="ctl00$ctl00$USD" id="ctl00_ctl00_USD" src="https://www.biggreensmile.no/images/template/currUSD_off.gif"
+                            alt="$" style="border-width: 0px;" /></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="content">
+            <div id="mainContent" style="width: 940px">
+                <h1>
+                    Takk for ordren!</h1>
+                <div id="ctl00_ctl00_singleColumnPlaceHolder_mainContentPlaceHolder_pnlOrderSection" class="order-confirmation-content">
+                    <h2>
+                        <span id="ctl00_ctl00_singleColumnPlaceHolder_mainContentPlaceHolder_lblInfoB2C">Ordrenummeret
+                            er 290969.</span></h2>
+                    <p>
+                        Ordren er ferdig.</p>
+                    <p>
+                        <table border="0" cellspacing="5" cellpadding="5">
+                            <tr>
+                                <td>
+                                    <b>Artikkel</b>
                                 </td>
-                                <td valign="middle">
-                                    <input type="image" name="ctl00$ctl00$btnSearch" id="ctl00_ctl00_btnSearch" class="btnSearch" src="https://www.biggreensmile.no/images/template/btnGo.gif" alt="Søk" style="border-width: 0px;"/>
+                                <td align='right'>
+                                    <b>Antall</b>
+                                </td>
+                                <td align='right'>
+                                    <b>Delsum</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Avalon Organics Tear Free babysjampo
+                                </td>
+                                <td align='right'>
+                                    1
+                                </td>
+                                <td align='right'>
+                                    kr. 70,00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Method Skummende Håndsåpe (Sweet Water)
+                                </td>
+                                <td align='right'>
+                                    1
+                                </td>
+                                <td align='right'>
+                                    kr. 30,00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Neal&#39;s Yard Frankincense Hydrating Cream Sample
+                                </td>
+                                <td align='right'>
+                                    1
+                                </td>
+                                <td align='right'>
+                                    kr. 0,00
                                 </td>
                             </tr>
                         </table>
-                    </div>
-                    <div id="ctl00_ctl00_currencyDiv">
-                        <dl id="currency">
-                            <dt>
-                                Velg valuta:
-                            </dt>
-                            <dd><input type="image" name="ctl00$ctl00$GBP" id="ctl00_ctl00_GBP" src="https://www.biggreensmile.no/images/template/currGBP_off.gif" alt="£" style="border-width: 0px;"/></dd>
-                            <dd><input type="image" name="ctl00$ctl00$EUR" id="ctl00_ctl00_EUR" src="https://www.biggreensmile.no/images/template/currEUR_off.gif" alt="€" style="border-width: 0px;"/></dd>
-                            <dd><input type="image" name="ctl00$ctl00$USD" id="ctl00_ctl00_USD" src="https://www.biggreensmile.no/images/template/currUSD_off.gif" alt="$" style="border-width: 0px;"/></dd>
-                        </dl>
-                    </div>
-                </div> 
-                <div id="content">
-                    <div id="mainContent" style="width: 940px">
-                        <h1>
-                            Takk for ordren!</h1>
-                        <div id="ctl00_ctl00_singleColumnPlaceHolder_mainContentPlaceHolder_pnlOrderSection">
-                            <h2>
-                                <span id="ctl00_ctl00_singleColumnPlaceHolder_mainContentPlaceHolder_lblInfoB2C">Ordrenummeret er 290969.</span></h2>
-                            <p>
-                                Ordren er ferdig.</p>
-                            <p>
-                                <table border=0 cellSpacing=5 cellPadding=5><tr><td><b>Artikkel</b></td><td align='right'><b>Antall</b></td><td align='right'><b>Delsum</b></td></tr><tr><td>Avalon Organics Tear Free babysjampo</td><td align='right'>1</td><td align='right'>kr. 70,00</td></tr><tr><td>Method Skummende Håndsåpe (Sweet Water)</td><td align='right'>1</td><td align='right'>kr. 30,00</td></tr><tr><td>Neal&#39;s Yard Frankincense Hydrating Cream Sample</td><td align='right'>1</td><td align='right'>kr. 0,00</td></tr></table><br>Frakt: kr. 78,00<br><b>Totalt: kr. 178,00</b><br><br></p>
-                            <p>
-                                Detaljene ovenfor bekreftes ved e-post. Klikk her for mer informasjon om
-                                <a href="http://www.biggreensmile.no/our-service.aspx">leveringstjenestene</a>.
-                            </p>
+                        <br>
+                        Frakt: kr. 78,00<br>
+                        <b>Totalt: kr. 178,00</b><br>
+                        <br>
+                    </p>
+                    <p>
+                        Detaljene ovenfor bekreftes ved e-post. Klikk her for mer informasjon om <a href="http://www.biggreensmile.no/our-service.aspx">
+                            leveringstjenestene</a>.
+                    </p>
+                </div>
+                <div class="order-confirmation-content">
+                    <link href="/Content/Site.css" rel="stylesheet" type="text/css" />
+                    <link href="/Content/themes/base/jquery.ui.all.css" rel="stylesheet" type="text/css" />
+
+                    <h3>
+                        Share your big green purchase
+                    </h3>
+                    <div id="share_products_wrapper">
+                        <div class="previous">
+                            Previous
                         </div>
-                        <br clear="all"/>
-                        <br/>
-                        <br/>
-                        <br/>
- 
-                        <div id="ctl00_ctl00_singleColumnPlaceHolder_mainContentPlaceHolder_AnalyticsEcommerceTracking"><script type='text/javascript'>
-                                                                                                                            var gaJsHost = (('https:' == document.location.protocol) ? 'https://ssl.' : 'http://www.');
-                                                                                                                            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-                                                                                                                        </script>
-                            <script type='text/javascript'>
-                                var pageTracker = _gat._getTracker('UA-358919-5');
-                                pageTracker._initData();
-                                pageTracker._trackPageview();
-                                pageTracker._addTrans('290969', 'none', '178,0000', '0,0000', '78,0000', 'Nesoddtangen', '', '?A');
-                                pageTracker._addItem('290969', 'AOTEARFREE', 'Avalon Organics Tear Free babysjampo', 'none', '70,0000', '1');
-                                pageTracker._addItem('290969', 'MFOAMSOAPSWTR', 'Method Skummende Håndsåpe', 'none', '30,0000', '1');
-                                pageTracker._addItem('290969', 'NYRSAMPFRKHYD', 'Neals Yard Frankincense Hydrating Cream Sample', 'none', '0,0000', '1');
-                                pageTracker._trackTrans();
-                            </script></div>
- 
-                        <div id="ctl00_ctl00_singleColumnPlaceHolder_mainContentPlaceHolder_divConversionTrackingAdwords">
- 
-                            <script language="JavaScript" type="text/javascript">
+                        <ul id="share_products" class="share-products" data-bind="foreach: Products">
+                            <li><a class="product-selector" data-bind="attr: { href: ('#' + Id), title: Description }">
+                                <img data-bind="attr: { src: Image, alt: Description}" />
+                                <span class="title" data-bind="text: Name"></span><span class="tweet-content" data-bind="text: Description">
+                                </span><span class="product-url" data-bind="text: EncodedUrl"></span><span class="encoded-url"
+                                    data-bind="text: Url"></span></a></li>
+                        </ul>
+                        <div class="next">
+                            Next
+                        </div>
+                    </div>
+                </div>
+                <script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"> </script>
+                <br clear="all" />
+                <br />
+                <br />
+                <br />
+                <div id="ctl00_ctl00_singleColumnPlaceHolder_mainContentPlaceHolder_AnalyticsEcommerceTracking">
+                    <script type='text/javascript'>
+                        var gaJsHost = (('https:' == document.location.protocol) ? 'https://ssl.' : 'http://www.');
+                        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+                    </script>
+                    <script type='text/javascript'>
+                        var pageTracker = _gat._getTracker('UA-358919-5');
+                        pageTracker._initData();
+                        pageTracker._trackPageview();
+                        pageTracker._addTrans('290969', 'none', '178,0000', '0,0000', '78,0000', 'Nesoddtangen', '', '?A');
+                        pageTracker._addItem('290969', 'AOTEARFREE', 'Avalon Organics Tear Free babysjampo', 'none', '70,0000', '1');
+                        pageTracker._addItem('290969', 'MFOAMSOAPSWTR', 'Method Skummende Håndsåpe', 'none', '30,0000', '1');
+                        pageTracker._addItem('290969', 'NYRSAMPFRKHYD', 'Neals Yard Frankincense Hydrating Cream Sample', 'none', '0,0000', '1');
+                        pageTracker._trackTrans();
+                    </script>
+                </div>
+                <div id="ctl00_ctl00_singleColumnPlaceHolder_mainContentPlaceHolder_divConversionTrackingAdwords">
+                    <script language="JavaScript" type="text/javascript">
 			<!--
-                                var google_conversion_id = 1058115128;
-                                var google_conversion_language = "en_GB";
-                                var google_conversion_format = "3";
-                                var google_conversion_color = "FFFFFF";
-                                if (178.0000) {
-                                    var google_conversion_value = 178.0000;
-                                }
-                                var google_conversion_label = "purchase";
+                        var google_conversion_id = 1058115128;
+                        var google_conversion_language = "en_GB";
+                        var google_conversion_format = "3";
+                        var google_conversion_color = "FFFFFF";
+                        if (178.0000) {
+                            var google_conversion_value = 178.0000;
+                        }
+                        var google_conversion_label = "purchase";
                             //-->
-		</script>
-                            <script type="text/javascript" language="JavaScript" src="https://www.googleadservices.com/pagead/conversion.js"> </script>
-                            <noscript>
-                                <img height="1" src="https://www.googleadservices.com/pagead/conversion/1058115128/imp.gif?value=178.0000&amp;label=purchase&amp;script=0" width="1" border="0">
-                            </noscript>
- 
-                        </div>
-                    </div>
-                </div>
-            </form>
-            <br class="clear"/>
-            <div id="footer">
-                <div id="footerMenu">
-                    <div class="footerMenuColumn">
-                        <h5>BigGreenSmile:</h5>
-                        <ul>
-                            <li class="first"><a href='http://www.biggreensmile.no/'>Hjem</a></li>
-                            <li><a href='http://www.biggreensmile.no/aboutus.aspx'>Om oss</a></li>
-                            <li><a href='http://www.biggreensmile.no/our-service.aspx#delivery'>Porto</a></li>
-                            <li><a href='http://www.biggreensmile.no/our-service.aspx#refunds'>Tilbakebetaling</a></li>
-                            <li><a href='http://www.biggreensmile.no/shop/department.aspx'>Produkter</a></li>
-                        </ul>
-                    </div>
-                    <div class="footerMenuColumn">
-                        <h5>&nbsp;</h5>
-                        <ul>
-                            <li class="first"><a href='https://www.biggreensmile.no/account/secure/your-account.aspx'>Din Konto</a></li>
-                        </ul>
-                    </div>
-                    <div class="footerMenuColumn">
-                        <h5>Avdelinger:</h5>
-                        <ul>
-                            <li><a href='http://www.biggreensmile.no/departments/naturlig-skjonnhet.aspx.aspx?deptID=WELLBEING'>Naturlig skjønnhet</a></li>
-                            <li><a href='http://www.biggreensmile.no/departments/naturlig-harpleie.aspx?deptid=HAIR'>Naturlig hårpleie</a></li>
-                            <li><a href='http://www.biggreensmile.no/departments/naturlige-deodoranter.aspx?deptid=DEODORANTS'>Naturlige deodoranter</a></li>
-                            <li><a href='http://www.biggreensmile.no/departments/naturlig-tannpleie.aspx?deptid=DENTAL'>Naturlig tannpleie</a></li>
-                            <li><a href='http://www.biggreensmile.no/departments/hudpleie-for-menn.aspx?deptid=MEN'>Menns velvære</a></li>
-                            <li><a href='http://www.biggreensmile.no/departments/baby-og-barn.aspx?deptid=MOBA'>Naturlig barn</a></li>
-                        </ul>
-                    </div>
-                    <div class="footerMenuColumn">
-                        <h5>&nbsp;</h5>
-                        <ul>
-                            <li><a href='http://www.biggreensmile.no/departments/rengjoringsprodukter.aspx?deptID=LAUNDRYCLEANING'>Rengjøringsprodukter</a></li>
-                            <li><a href='http://www.biggreensmile.no/brands/brands.aspx'>Velg merke</a></li>
-                            <li><a href='http://www.biggreensmile.no/ingredients/ingredients.aspx'>Velg ingrediens</a></li>
-                            <li><a href='http://www.biggreensmile.no/departments/tilbud.aspx?deptid=SPECIALOFFERS'>Tilbud</a></li>
-                        </ul>
-                    </div>
-                    <div class="footerMenuColumn">
-                        <h5>Kontakt oss:</h5>
-                        <ul>
-                            <li><a href='http://www.biggreensmile.no/contactus.aspx'>Kontakt oss</a></li>
-                            <li><a href='http://www.biggreensmile.no/tellus.aspx'>Dine meninger</a></li>
- 
-                        </ul>
-                    </div>
-                </div>
-                <div class="clear"></div>
-                <div id="footerUtils">
-                    &copy; Opphavsrett Big Green Smile Ltd. | <a href='http://www.biggreensmile.no/terms_and_conditions.aspx'>Vilkår og betingelser</a> | <a href='http://www.biggreensmile.no/privacy.aspx'>Personvern</a> | <a href="http://www.biggreensmile.com/buy-more-pay-less.aspx#corporate">Business</a>
+                    </script>
+                    <script type="text/javascript" language="JavaScript" src="https://www.googleadservices.com/pagead/conversion.js"> </script>
+                    <noscript>
+                        <img height="1" src="https://www.googleadservices.com/pagead/conversion/1058115128/imp.gif?value=178.0000&amp;label=purchase&amp;script=0"
+                            width="1" border="0">
+                    </noscript>
                 </div>
             </div>
-            <div id="ctl00_ctl00_javascriptdiv">
- 
-                <script type="text/javascript">
-                    var defaultText = "E-postadresse";
+        </div>
+        </form>
+        <br class="clear" />
+        <div id="footer">
+            <div id="footerMenu">
+                <div class="footerMenuColumn">
+                    <h5>
+                        BigGreenSmile:</h5>
+                    <ul>
+                        <li class="first"><a href='http://www.biggreensmile.no/'>Hjem</a></li>
+                        <li><a href='http://www.biggreensmile.no/aboutus.aspx'>Om oss</a></li>
+                        <li><a href='http://www.biggreensmile.no/our-service.aspx#delivery'>Porto</a></li>
+                        <li><a href='http://www.biggreensmile.no/our-service.aspx#refunds'>Tilbakebetaling</a></li>
+                        <li><a href='http://www.biggreensmile.no/shop/department.aspx'>Produkter</a></li>
+                    </ul>
+                </div>
+                <div class="footerMenuColumn">
+                    <h5>
+                        &nbsp;</h5>
+                    <ul>
+                        <li class="first"><a href='https://www.biggreensmile.no/account/secure/your-account.aspx'>
+                            Din Konto</a></li>
+                    </ul>
+                </div>
+                <div class="footerMenuColumn">
+                    <h5>
+                        Avdelinger:</h5>
+                    <ul>
+                        <li><a href='http://www.biggreensmile.no/departments/naturlig-skjonnhet.aspx.aspx?deptID=WELLBEING'>
+                            Naturlig skjønnhet</a></li>
+                        <li><a href='http://www.biggreensmile.no/departments/naturlig-harpleie.aspx?deptid=HAIR'>
+                            Naturlig hårpleie</a></li>
+                        <li><a href='http://www.biggreensmile.no/departments/naturlige-deodoranter.aspx?deptid=DEODORANTS'>
+                            Naturlige deodoranter</a></li>
+                        <li><a href='http://www.biggreensmile.no/departments/naturlig-tannpleie.aspx?deptid=DENTAL'>
+                            Naturlig tannpleie</a></li>
+                        <li><a href='http://www.biggreensmile.no/departments/hudpleie-for-menn.aspx?deptid=MEN'>
+                            Menns velvære</a></li>
+                        <li><a href='http://www.biggreensmile.no/departments/baby-og-barn.aspx?deptid=MOBA'>
+                            Naturlig barn</a></li>
+                    </ul>
+                </div>
+                <div class="footerMenuColumn">
+                    <h5>
+                        &nbsp;</h5>
+                    <ul>
+                        <li><a href='http://www.biggreensmile.no/departments/rengjoringsprodukter.aspx?deptID=LAUNDRYCLEANING'>
+                            Rengjøringsprodukter</a></li>
+                        <li><a href='http://www.biggreensmile.no/brands/brands.aspx'>Velg merke</a></li>
+                        <li><a href='http://www.biggreensmile.no/ingredients/ingredients.aspx'>Velg ingrediens</a></li>
+                        <li><a href='http://www.biggreensmile.no/departments/tilbud.aspx?deptid=SPECIALOFFERS'>
+                            Tilbud</a></li>
+                    </ul>
+                </div>
+                <div class="footerMenuColumn">
+                    <h5>
+                        Kontakt oss:</h5>
+                    <ul>
+                        <li><a href='http://www.biggreensmile.no/contactus.aspx'>Kontakt oss</a></li>
+                        <li><a href='http://www.biggreensmile.no/tellus.aspx'>Dine meninger</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear">
+            </div>
+            <div id="footerUtils">
+                &copy; Opphavsrett Big Green Smile Ltd. | <a href='http://www.biggreensmile.no/terms_and_conditions.aspx'>
+                    Vilkår og betingelser</a> | <a href='http://www.biggreensmile.no/privacy.aspx'>Personvern</a>
+                | <a href="http://www.biggreensmile.com/buy-more-pay-less.aspx#corporate">Business</a>
+            </div>
+        </div>
+        <div id="ctl00_ctl00_javascriptdiv">
+            <script type="text/javascript">
+                var defaultText = "E-postadresse";
 
-                    function NLSWaterMark(txt, evt) {
-                        if (txt.value.length == 0 && evt.type == "blur") {
-                            txt.style.color = "gray";
-                            txt.value = defaultText;
-                        }
-                        if (txt.value == defaultText && evt.type == "focus") {
-                            txt.style.color = "black";
-                            txt.value = "";
-                        }
+                function NLSWaterMark(txt, evt) {
+                    if (txt.value.length == 0 && evt.type == "blur") {
+                        txt.style.color = "gray";
+                        txt.value = defaultText;
                     }
-                </script>
-                <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"> </script>
-                <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js"> </script>
-                <script type="text/javascript">
-                    (function($) {
-                        $(function() {
-                            $(".txtSearch").autocomplete({
-                                source: 'https://www.biggreensmile.no/apps/ajax/autocompleteasync.ashx',
-                                minLength: 1,
-                                delay: 100,
-                                select: function(event, ui) {
-                                    document.location = 'http://www.biggreensmile.no/' + 'search.aspx?q=' + encodeURIComponent(ui.item.label);
-                                }
-                            })
-                                // undocumented function: _renderItem
-                                .data("autocomplete")._renderItem = function(ul, item) {
+                    if (txt.value == defaultText && evt.type == "focus") {
+                        txt.style.color = "black";
+                        txt.value = "";
+                    }
+                }
+            </script>
+                    <script src="/Scripts/jquery-1.7.1.min.js" type="text/javascript"></script>
+                    <script src="/Scripts/jquery-ui-1.8.18.min.js" type="text/javascript"></script>
+                    <script src="/Scripts/jquery.jcoverflip.js" type="text/javascript"></script>
+                    <script src="/Scripts/knockout.debug.js" type="text/javascript"></script>
+                    <script src="/Scripts/knockout.mapping-latest.debug.js" type="text/javascript"></script>
+                    <script src="/Scripts/KnockoutJS/shareViewModel.js" type="text/javascript"> </script>
+                    <script src="/Scripts/ShareWidget/shareWidget.js" type="text/javascript"> </script>
+            <script type="text/javascript">
+                (function ($) {
+                    $(function () {
+                        $(".txtSearch").autocomplete({
+                            source: 'https://www.biggreensmile.no/apps/ajax/autocompleteasync.ashx',
+                            minLength: 1,
+                            delay: 100,
+                            select: function (event, ui) {
+                                document.location = 'http://www.biggreensmile.no/' + 'search.aspx?q=' + encodeURIComponent(ui.item.label);
+                            }
+                        })
+                        // undocumented function: _renderItem
+                                .data("autocomplete")._renderItem = function (ul, item) {
                                     var tohighlight = $(".txtSearch").val().replace("\\", "\\\\");
                                     // match the search term, case-insensitive, remembering it as a sub-expression: (^en)| (en)
                                     var regex = new RegExp("(^" + tohighlight + ")| (" + tohighlight + ")", "i");
                                     return $("<li></li>")
                                         .data("item.autocomplete", item)
-                                        // replace the matched subexpression with a bold version of itself
+                                    // replace the matched subexpression with a bold version of itself
                                         .append("<a>" + item.label.replace(regex, "<b>$&</b>") + "</a>")
                                         .appendTo(ul);
                                 }
-                        });
-                    })(jQuery);
-                </script>
-            </div> 
-        </div> 
-    </body>
+                    });
+                })(jQuery);
+            </script>
+        </div>
+    </div>
+</body>
 </html>

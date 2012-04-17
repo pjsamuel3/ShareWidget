@@ -53,14 +53,9 @@ $(document).ready(function() {
 shareWidget.setupImageFlip = function () {
 
     function customTitleCreate(itemElem) {
-        // 1. Create a new blank element to return
+        
         var title = $('<div class="title"></div>')
-            // 2. Add the alt attribute to the title
             .append(itemElem.find('img').attr('alt'))
-            // 3. Add a link to view the full size image
-
-            //
-            //
             .append('<a name="fb_share" type="icon_link" share_url="' + itemElem.find('span.product-url').hide().text() + '">Share on facebook</a>')
             .append('<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="' + itemElem.find('span.encoded-url').hide().text() + '" data-text="' + itemElem.find('span.tweet-content').hide().text() + '">Tweet</a>');
         return title;
@@ -70,7 +65,7 @@ shareWidget.setupImageFlip = function () {
         titleElem.remove(); // delete the title element
     }
 
-    shareWidget.productFlip = jQuery('#share_products').jcoverflip({
+    shareWidget.productFlip = $('#share_products').jcoverflip({
         current: 0,
         change: function (event, ui) {
             var currentItem = $('#share_products').jcoverflip('current');

@@ -1,47 +1,45 @@
 body
 {
     font-size: .85em;
-    font-family: "Trebuchet MS", Verdana, Helvetica, Sans-Serif;
+    font-family: "Trebuchet MS" , Verdana, Helvetica, Sans-Serif;
     color: #232323;
     background-color: #fff;
 }
 
-header,
-footer,
-nav,
-section {
+header, footer, nav, section
+{
     display: block;
 }
 
 /* Styles for basic forms
 -----------------------------------------------------------*/
 
-fieldset 
+fieldset
 {
-    border:1px solid #ddd;
-    padding:0 1.4em 1.4em 1.4em;
-    margin:0 0 1.5em 0;
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
 }
 
-legend 
+legend
 {
-    font-size:1.2em;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
-textarea 
+textarea
 {
     min-height: 75px;
 }
 
-.editor-label 
+.editor-label
 {
     margin: 1em 0 0 0;
 }
 
-.editor-field 
+.editor-field
 {
-    margin:0.5em 0 0 0;
+    margin: 0.5em 0 0 0;
 }
 
 
@@ -95,70 +93,102 @@ ul.share-products li span, ul.share-products li img, ul.share-products li a{
 */
 /* Share widget styles
 -------------------------------------------------------------*/
-      .ui-jcoverflip {
-        position: relative;
-      }
-      
-      .ui-jcoverflip--item {
-        position: absolute;
-        display: block;
-      }
-      
-      /* Basic sample CSS */
-      #share_products {
-        height: 250px;
-        width: 100%;
-        margin-bottom: 50px;
-      }
-      
-      #share_products .ui-jcoverflip--title {
-        position: absolute;
-        bottom: -30px;
-        width: 100%;
-        text-align: center;
-        color: #555;
-      }
-      
-      #share_products img {
-        display: block;
-        border: 0;
-        outline: none;
-      }
-      
-      #share_products a {
-        outline: none;
-      }
-      
-      
-      #share_products_wrapper {
-        height: 350px;
-        width: 100%;
-        overflow: hidden;
-        position: relative;
-      }
-      
-      .ui-jcoverflip--item {
-        cursor: pointer;
-      }
-      
-      body {
-        font-family: Arial, sans-serif;
-        width: 500px;
-        padding: 0;
-        margin: 0;
-      }
-      
-      ul,
-      ul li {
-        margin: 0;
-        padding: 0;
-        display: block;
-        list-style-type: none;
-      }
-      
-      #scrollbar {
-        position: absolute;
-        left: 20px;
-        right: 20px;
-        
-      }
+.ui-jcoverflip
+{
+    position: relative;
+}
+
+.ui-jcoverflip--item
+{
+    position: absolute;
+    display: block;
+    cursor: pointer;
+}
+
+/* Basic sample CSS */
+
+#share_products_wrapper
+{
+    height: 350px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#share_products_wrapper .previous
+{
+    background-color: SkyBlue;
+    border: 2px solid SkyBlue;
+    float: left;
+    height: 500px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#share_products_wrapper .next
+{
+    background-color: SkyBlue;
+    border: 2px solid SkyBlue;
+    float: right;
+    height: 500px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.order-confirmation-content {
+    float: left;
+    width: 49%;
+}
+
+#share_products
+{
+    height: 250px;
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+#share_products .ui-jcoverflip--title
+{
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+    text-align: center;
+    color: #555;
+}
+
+#share_products img
+{
+    display: block;
+    border: 0;
+    outline: none;
+}
+
+#share_products a
+{
+    outline: none;
+}
+
+body
+{
+    font-family: Arial, sans-serif;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#share_products_wrapper ul, #share_products_wrapper ul li
+{
+    margin: 0;
+    padding: 0;
+    display: block;
+    list-style-type: none;
+    background-image: none;
+}
+
+#scrollbar
+{
+    position: absolute;
+    left: 20px;
+    right: 20px;
+}

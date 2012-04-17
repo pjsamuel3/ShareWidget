@@ -19,9 +19,9 @@
 
 <h2>Order</h2>
 
-<div data-bind="text: OrderId"></div>
+@*<div data-bind="text: OrderId"></div>
 
-@*<div id="social_choices_tabs">
+<div id="social_choices_tabs">
     <ul>
         <li><a href="#tabs-1">Facebook</a></li>
         <li><a href="#tabs-2">Twitter</a></li>
@@ -38,7 +38,7 @@
     </div>
 </div>*@
 
-<div>
+@*<div>
     Total products in order: <span data-bind="text: shareViewModel.totalProductsInOrder()"></span>
 </div>
 
@@ -47,7 +47,7 @@
     <div data-bind="text: shareViewModel.currentItem().Name"></div>
     <div data-bind="text: shareViewModel.currentItem().Description"></div>
     <div data-bind="text: shareViewModel.currentItem().Image"></div>
-</div>
+</div>*@
 
 <h3>
     Share your big green purchase
@@ -83,16 +83,18 @@
                    optionsCaption: 'Choose...'"></select>
 </p>*@
  
-<div data-bind="visible: SelectedProduct"> <!-- Appears when you select something -->
+@*<div data-bind="visible: SelectedProduct"> <!-- Appears when you select something -->
     You have chosen a product with the name
 </div>
 
 <a name="fb_share" type="icon_link"  data-bind="attr: {'share_url': shareViewModel.currentItem().Description}">Share to facebook</a>
-<script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" 
-        type="text/javascript"> </script>
+
         
 <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-bind="attr: {'data-text': shareViewModel.currentItem().Description}">Tweet</a>
-<script type="text/javascript">  </script>
+<script type="text/javascript">  </script>*@
+
+<script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" 
+        type="text/javascript"> </script>
 
 @*<span class='st_sharethis_large' displayText='ShareThis'></span>
 <span class='st_facebook_large' displayText='Facebook'></span>
