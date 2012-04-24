@@ -115,45 +115,50 @@ ul.share-products li span, ul.share-products li img, ul.share-products li a{
     position: relative;
 }
 
-#share_products_wrapper .previous
+#share_products_wrapper .navigation
 {
-    background-color: SkyBlue;
-    border: 2px solid SkyBlue;
+    color: #24B621;
     float: left;
-    height: 500px;
-    position: absolute;
-    left: 0;
-    top: 0;
+    font-size: 60px;
+    font-weight: bold;
+    height: 350px;
+    width: 10%;
+}
+#share_products_wrapper .navigation:hover
+{
+    cursor: pointer;
+    color: #0F92DC;
 }
 #share_products_wrapper .next
 {
-    background-color: SkyBlue;
-    border: 2px solid SkyBlue;
     float: right;
-    height: 500px;
-    position: absolute;
-    right: 0;
-    top: 0;
+    text-align: right;
 }
 
-.order-confirmation-content {
+.order-confirmation-content
+{
     float: left;
     width: 49%;
 }
-
-#share_products
+.order-items {
+    float: right;
+    width: 49%;
+}
+ul#share_products
 {
-    height: 250px;
-    width: 50%;
-    margin-bottom: 50px;
+    float: left;
+    height: 350px;
+    width: 80%;
+    margin: 0;
+    overflow: hidden;
 }
 
 #share_products .ui-jcoverflip--title
 {
     position: absolute;
-    bottom: -30px;
+    bottom: 5px;
+    left: 20px;
     width: 100%;
-    text-align: center;
     color: #555;
 }
 
@@ -166,9 +171,15 @@ ul.share-products li span, ul.share-products li img, ul.share-products li a{
 
 #share_products a
 {
+    display: block;
     outline: none;
+    margin: 5px 0;
 }
 
+.twitter-share-button
+{
+    margin: 0;  
+}
 body
 {
     font-family: Arial, sans-serif;
@@ -177,7 +188,7 @@ body
     margin: 0;
 }
 
-#share_products_wrapper ul, #share_products_wrapper ul li
+#share_products_wrapper div ul, #share_products_wrapper ul li
 {
     margin: 0;
     padding: 0;

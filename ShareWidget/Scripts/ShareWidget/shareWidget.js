@@ -56,7 +56,7 @@ shareWidget.setupImageFlip = function () {
         
         var title = $('<div class="title"></div>')
             .append(itemElem.find('img').attr('alt'))
-            .append('<a name="fb_share" type="icon_link" share_url="' + itemElem.find('span.product-url').hide().text() + '">Share on facebook</a>')
+            .append('<a name="fb_share" type="button" share_url="' + itemElem.find('span.product-url').hide().text() + '">Share on facebook</a>')
             .append('<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="' + itemElem.find('span.encoded-url').hide().text() + '" data-text="' + itemElem.find('span.tweet-content').hide().text() + '">Tweet</a>');
         return title;
     }
@@ -72,7 +72,13 @@ shareWidget.setupImageFlip = function () {
             var clickedProduct = $($('#share_products > li')[currentItem]).find("a").attr("href").replace("#", "");
             shareViewModel.SelectedProduct(clickedProduct);
         },
-        titles: { create: customTitleCreate, destroy: customTitleDestroy }
+        titles: { create: customTitleCreate, destroy: customTitleDestroy },
+         currentCss: function (el, container) {
+                return [
+                    $.jcoverflip.animationElement(el, { left: (container.width() / 2 - 100) + 'px', top: 0 }, {}),
+                    $.jcoverflip.animationElement(el.find('img'), { width: '100px', opacity: 1 }, {})
+                ];
+            }
     });
 
     //    shareWidget.productFlip = jQuery('#share_products').jcoverflip({
