@@ -7,8 +7,13 @@
     SelectedProduct: ko.observable()
 };
 
-shareViewModel.totalProductsInOrder = ko.computed(function() {
+shareViewModel.totalProductsInOrder = ko.computed(function () {
     return this.Products().length;
+}, shareViewModel);
+
+shareViewModel.showNavigation = ko.computed(function () {
+    console.log(this.Products().length > 1);
+    return this.Products().length > 1;
 }, shareViewModel);
 
 shareViewModel.currentItem = ko.computed(function () {

@@ -169,7 +169,7 @@ xmlns:og="http://opengraphprotocol.org/schema/">
                         <span class="banner-number">1</span> <span class="banner-text">Velg produktet du vil dele</span>
                     </div>
                     <div id="share_products_wrapper">
-                        <div class="previous navigation">
+                        <div class="previous navigation" data-bind="css: {isNotVisible: showNavigation() == false}">
                             &nbsp;
                         </div>
                         <ul id="share_products" class="share-products" data-bind="foreach: Products">
@@ -179,7 +179,7 @@ xmlns:og="http://opengraphprotocol.org/schema/">
                                                                                       </span><span class="product-url" data-bind="text: EncodedUrl"></span><span class="encoded-url"
                                                                                                                                                                  data-bind="text: Url"></span></a></li>
                         </ul>
-                        <div class="next navigation">
+                        <div class="next navigation" data-bind="css: {isNotVisible: showNavigation() == false}">
                             &nbsp;
                         </div>
                     </div>

@@ -172,11 +172,18 @@ ul.share-products li span, ul.share-products li img, ul.share-products li a{
     height: 280px;
     width: 10%;
 }
+
 #share_products_wrapper .navigation:hover
 {
     cursor: pointer;
     color: #0F92DC;
 }
+
+#share_products_wrapper .isNotVisible
+{
+    visibility: hidden
+}
+
 #share_products_wrapper .previous
 {
     background:transparent url('BGS/Images/share-arrow-left.png') no-repeat left center;
