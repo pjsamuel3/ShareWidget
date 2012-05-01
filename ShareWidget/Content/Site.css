@@ -103,25 +103,73 @@ ul.share-products li span, ul.share-products li img, ul.share-products li a{
     position: absolute;
     display: block;
     cursor: pointer;
+    /*width: 150px;*/
 }
 
 /* Basic sample CSS */
 
 #share_products_wrapper
 {
-    height: 350px;
-    width: 100%;
+    background:transparent url('BGS/Images/share-lines.png') repeat-y left;
+    height: 280px;
+    margin-left: 21px;
     overflow: hidden;
+    padding: 0 6px;
     position: relative;
+    width: 409px;
+}
+
+.share_products_banner
+{
+    background:transparent url('BGS/Images/share-banner.png') no-repeat left top;
+    height: 44px;
+    overflow: hidden;
+    width: 463px;
+}
+#share-buttons
+{
+    border-left: 1px solid #15b807;
+    border-right: 1px solid #15b807;
+    margin-left: 21px;
+    padding: 15px 0;
+    position: relative;
+    width: 419px;
+}
+#share-buttons div.title
+{
+    position: absolute;
+    top: 6px;
+}
+#share-buttons-footer
+{
+    background:transparent url('BGS/Images/share-bottom-line.png') no-repeat left bottom;
+    height: 8px;
+    margin-left: 21px;
+    width: 421px;
+}
+
+.banner-number
+{
+    display: block;
+    float: left;
+    margin: 9px 0 0 28px;
+    width: 30px;
+}
+
+.banner-text
+{
+    color: #fff;
+    display: block;
+    float: left;
+    font-size: 17px;
+    margin-top: 8px;
+    width: 300px;
 }
 
 #share_products_wrapper .navigation
 {
-    color: #24B621;
     float: left;
-    font-size: 60px;
-    font-weight: bold;
-    height: 350px;
+    height: 280px;
     width: 10%;
 }
 #share_products_wrapper .navigation:hover
@@ -129,8 +177,16 @@ ul.share-products li span, ul.share-products li img, ul.share-products li a{
     cursor: pointer;
     color: #0F92DC;
 }
+#share_products_wrapper .previous
+{
+    background:transparent url('BGS/Images/share-arrow-left.png') no-repeat left center;
+    text-align: left;
+}
+
+    
 #share_products_wrapper .next
 {
+    background:transparent url('BGS/Images/share-arrow-right.png') no-repeat right center;
     float: right;
     text-align: right;
 }
@@ -144,22 +200,18 @@ ul.share-products li span, ul.share-products li img, ul.share-products li a{
     float: right;
     width: 49%;
 }
+.order-items h3
+{
+    font-size: 18px;
+    font-weight: normal;
+}
 ul#share_products
 {
     float: left;
-    height: 350px;
+    height: 250px;
     width: 80%;
-    margin: 0;
+    margin: 40px 0 0;
     overflow: hidden;
-}
-
-#share_products .ui-jcoverflip--title
-{
-    position: absolute;
-    bottom: 5px;
-    left: 20px;
-    width: 100%;
-    color: #555;
 }
 
 #share_products img
@@ -171,14 +223,25 @@ ul#share_products
 
 #share_products a
 {
+    color: #232323;
     display: block;
     outline: none;
     margin: 5px 0;
+    text-align: center;
+    text-decoration: none;
+}
+#share_products a .title
+{
+    display: none;
+    left: -52px;
+    padding-top: 10px;
+    position: absolute;
+    width: 250px;
 }
 
 .twitter-share-button
 {
-    margin: 0;  
+    margin: 0 15px;  
 }
 body
 {

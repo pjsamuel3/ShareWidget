@@ -165,23 +165,32 @@ xmlns:og="http://opengraphprotocol.org/schema/">
                     <h3>
                         Share your purchase
                     </h3>
-                    <div>Step 1</div>
+                    <div class="share_products_banner">
+                        <span class="banner-number">1</span> <span class="banner-text">Velg produktet du vil dele</span>
+                    </div>
                     <div id="share_products_wrapper">
                         <div class="previous navigation">
-                            &lsaquo;
+                            &nbsp;
                         </div>
                         <ul id="share_products" class="share-products" data-bind="foreach: Products">
                             <li><a class="product-selector" data-bind="attr: { href: ('#' + Id), title: Description }">
-                                <img data-bind="attr: { src: Image, alt: Description}" />
-                                <span class="title" data-bind="text: Name"></span><span class="tweet-content" data-bind="text: Description">
-                                </span><span class="product-url" data-bind="text: EncodedUrl"></span><span class="encoded-url"
-                                    data-bind="text: Url"></span></a></li>
+                                    <img data-bind="attr: { src: Image, alt: Description}" />
+                                    <span class="title" data-bind="text: Name"></span><span class="tweet-content" data-bind="text: Description">
+                                                                                      </span><span class="product-url" data-bind="text: EncodedUrl"></span><span class="encoded-url"
+                                                                                                                                                                 data-bind="text: Url"></span></a></li>
                         </ul>
                         <div class="next navigation">
-                            &rsaquo;
+                            &nbsp;
                         </div>
                     </div>
+                    <div class="share_products_banner">
+                        <span class="banner-number">2</span> <span class="banner-text">Velg hvor du vil dele</span>
+                    </div>
+                    <div id="share-buttons">
+                    </div>
+                    <div id="share-buttons-footer">&nbsp;</div>
                 </div>
+            </div>
                 <script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"> </script>
                 <br clear="all" />
                 <br />
@@ -222,7 +231,6 @@ xmlns:og="http://opengraphprotocol.org/schema/">
                             width="1" border="0">
                     </noscript>
                 </div>
-            </div>
         </div>
         </form>
         <br class="clear" />
