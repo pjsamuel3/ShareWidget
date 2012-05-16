@@ -73,20 +73,21 @@
     <Compile Include="Models\ShareProductsViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Content Include="Content\BGS\BGS_no.css" />
-    <Content Include="Content\BGS\HTMLPage1.htm" />
+    <Content Include="Order.htm" />
     <Content Include="Content\BGS\Images\prod3.jpg" />
     <Content Include="Content\BGS\Images\prod2.jpg" />
     <Content Include="Content\BGS\Images\prod1.jpg" />
     <Content Include="Content\BGS\Images\prod4.jpg" />
-    <Content Include="Content\BGS\Images\share-arrow-left.png" />
-    <Content Include="Content\BGS\Images\share-arrow-right.png" />
-    <Content Include="Content\BGS\Images\share-banner.png" />
-    <Content Include="Content\BGS\Images\share-bottom-line.png" />
-    <Content Include="Content\BGS\Images\share-lines.png" />
+    <Content Include="images\template\share-arrow-left.png" />
+    <Content Include="images\template\share-arrow-right.png" />
+    <Content Include="images\template\share-banner.png" />
+    <Content Include="images\template\share-bottom-line.png" />
+    <Content Include="images\template\share-lines.png" />
     <Content Include="Content\BGS\screen.css" />
     <Content Include="Scripts\jquery-ui-1.7.2.js" />
-    <Content Include="Scripts\jquery.jcoverflip.js" />
-    <Content Include="Scripts\ShareWidget\shareWidget.js" />
+    <Content Include="js\jquery.jcoverflip.js" />
+    <Content Include="js\shareWidget.combined.0.1.js" />
+    <Content Include="js\shareWidget.js" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -117,20 +118,20 @@
     <Content Include="Content\themes\base\jquery.ui.tabs.css" />
     <Content Include="Content\themes\base\jquery.ui.theme.css" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
+    <Content Include="css\ShareWidget.css" />
     <Content Include="README.jQuery.vsdoc.txt" />
     <Content Include="Scripts\jquery-1.7.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
-    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="js\jquery-1.7.1.min.js" />
     <Content Include="Scripts\jquery-ui-1.8.18.js" />
-    <Content Include="Scripts\jquery-ui-1.8.18.min.js" />
+    <Content Include="js\jquery-ui-1.8.18.min.js" />
     <Content Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\knockout.debug.js" />
-    <Content Include="Scripts\knockout.js" />
+    <Content Include="js\knockout.js" />
     <Content Include="Scripts\knockout.mapping-latest.debug.js" />
-    <Content Include="Scripts\knockout.mapping-latest.js" />
+    <Content Include="js\knockout.mapping-latest.js" />
     <Content Include="Scripts\KnockoutJS\shareViewModel.js" />
     <Content Include="Scripts\modernizr-1.7.js" />
     <Content Include="Scripts\modernizr-1.7.min.js" />
@@ -162,6 +163,12 @@
   <ItemGroup>
     <Content Include="Views\Order\Index.cshtml" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Scripts\ShareWidget\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="apps\ajax\orderjson.js" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -180,7 +187,7 @@
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>2397</DevelopmentServerPort>
-          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <DevelopmentServerVPath>/petetest/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>

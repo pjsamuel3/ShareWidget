@@ -110,7 +110,7 @@ ul.share-products li span, ul.share-products li img, ul.share-products li a{
 
 #share_products_wrapper
 {
-    background:transparent url('BGS/Images/share-lines.png') repeat-y left;
+    background:transparent url('/petetest/images/template/share-lines.png') repeat-y left;
     height: 280px;
     margin-left: 21px;
     overflow: hidden;
@@ -121,7 +121,7 @@ ul.share-products li span, ul.share-products li img, ul.share-products li a{
 
 .share_products_banner
 {
-    background:transparent url('BGS/Images/share-banner.png') no-repeat left top;
+    background:transparent url('/petetest/images/template/share-banner.png') no-repeat left top;
     height: 44px;
     overflow: hidden;
     width: 463px;
@@ -142,7 +142,7 @@ ul.share-products li span, ul.share-products li img, ul.share-products li a{
 }
 #share-buttons-footer
 {
-    background:transparent url('BGS/Images/share-bottom-line.png') no-repeat left bottom;
+    background:transparent url('/petetest/images/template/share-bottom-line.png') no-repeat left bottom;
     height: 8px;
     margin-left: 21px;
     width: 421px;
@@ -186,14 +186,14 @@ ul.share-products li span, ul.share-products li img, ul.share-products li a{
 
 #share_products_wrapper .previous
 {
-    background:transparent url('BGS/Images/share-arrow-left.png') no-repeat left center;
+    background:transparent url('/petetest/images/template/share-arrow-left.png') no-repeat left center;
     text-align: left;
 }
 
     
 #share_products_wrapper .next
 {
-    background:transparent url('BGS/Images/share-arrow-right.png') no-repeat right center;
+    background:transparent url('/petetest/images/template/share-arrow-right.png') no-repeat right center;
     float: right;
     text-align: right;
 }

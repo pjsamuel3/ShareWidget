@@ -36,7 +36,7 @@ namespace ShareWidget.Controllers
                                                                Id = "prod1",
                                                                Name = "Product 1",
                                                                Description = "Description one is a bit longer",
-                                                               Image = "/Content/BGS/Images/Prod1.jpg",
+                                                               Image = "Content/BGS/Images/Prod1.jpg",
                                                                Url = url,
                                                                EncodedUrl = Server.UrlEncode(url),
                                                                ShortUrl = ""
@@ -46,7 +46,7 @@ namespace ShareWidget.Controllers
                                                                Id = "prod2",
                                                                Name = "Product 2",
                                                                Description = "Description two is even longer",
-                                                               Image = "/Content/BGS/Images/Prod2.jpg",
+                                                               Image = "Content/BGS/Images/Prod2.jpg",
                                                                Url = url,
                                                                EncodedUrl = Server.UrlEncode(url),
                                                                ShortUrl = ""
@@ -56,7 +56,7 @@ namespace ShareWidget.Controllers
                                                                Id = "prod3",
                                                                Name = "Product 3",
                                                                Description = "Description three is short",
-                                                               Image = "/Content/BGS/Images/Prod3.jpg",
+                                                               Image = "Content/BGS/Images/Prod3.jpg",
                                                                Url = url,
                                                                EncodedUrl = Server.UrlEncode(url),
                                                                ShortUrl = ""
@@ -66,7 +66,7 @@ namespace ShareWidget.Controllers
                                                                Id = "prod4",
                                                                Name = "Product 4",
                                                                Description = "Description four is short",
-                                                               Image = "/Content/BGS/Images/Prod4.jpg",
+                                                               Image = "Content/BGS/Images/Prod4.jpg",
                                                                Url = url,
                                                                EncodedUrl = Server.UrlEncode(url),
                                                                ShortUrl = ""

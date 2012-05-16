@@ -12,7 +12,6 @@ shareViewModel.totalProductsInOrder = ko.computed(function () {
 }, shareViewModel);
 
 shareViewModel.showNavigation = ko.computed(function () {
-    console.log(this.Products().length > 1);
     return this.Products().length > 1;
 }, shareViewModel);
 
