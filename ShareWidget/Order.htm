@@ -175,9 +175,7 @@ xmlns:og="http://opengraphprotocol.org/schema/">
                         <ul id="share_products" class="share-products" data-bind="foreach: Products">
                             <li><a class="product-selector" data-bind="attr: { href: ('#' + Id), title: Description }">
                                     <img data-bind="attr: { src: Image, alt: Description}" />
-                                    <span class="title" data-bind="text: Name"></span><span class="tweet-content" data-bind="text: Description">
-                                                                                      </span><span class="product-url" data-bind="text: EncodedUrl"></span><span class="encoded-url"
-                                                                                                                                                                 data-bind="text: Url"></span></a></li>
+                                    <span class="title" data-bind="text: Name"></span><span class="tweet-content" data-bind="text: Name"></span><span class="product-url" data-bind="text: ShortUrl"></span><span class="encoded-url" data-bind="text: ShortUrl"></span></a></li>
                         </ul>
                         <div class="next navigation" data-bind="css: {isNotVisible: showNavigation() == false}">
                             &nbsp;
@@ -191,7 +189,7 @@ xmlns:og="http://opengraphprotocol.org/schema/">
                     <div id="share-buttons-footer">&nbsp;</div>
                 </div>
             </div>
-                <script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"> </script>
+                
                 <br clear="all" />
                 <br />
                 <br />
@@ -317,6 +315,7 @@ xmlns:og="http://opengraphprotocol.org/schema/">
                     }
                 }
             </script>
+            
             <script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
             <script src="js/jquery-ui-1.8.18.min.js" type="text/javascript"></script>
             <script src="js/jquery.jcoverflip.js" type="text/javascript"></script>
@@ -330,6 +329,8 @@ xmlns:og="http://opengraphprotocol.org/schema/">
                 });
 
             </script>
+            <!--<script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"> </script>-->
+
             <script type="text/javascript">
                 (function ($) {
                     $(function () {

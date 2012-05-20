@@ -28,7 +28,7 @@ shareViewModel.currentItem = ko.computed(function () {
 }, shareViewModel);
 
 var shareWidget = shareWidget || {};
-shareWidget.productsToShareUrl = "Order/ShareProducts/"; //  Order/ShareProducts//apps/ajax/orderjson.ashx?o=
+shareWidget.productsToShareUrl = "/apps/ajax/orderjson.ashx?o="; //  Order/ShareProducts//apps/ajax/orderjson.ashx?o=
 shareWidget.productFlip = null;
 
 shareWidget.getOrderedProducts = function (orderId) {
@@ -50,6 +50,11 @@ shareWidget.runTwitterCode = function () {
 
 };
 
+shareWidget.runFacebookCode = function() {
+    $.getScript("//static.ak.fbcdn.net/connect.php/js/FB.Share", function(data, textStatus, jqxhr) {
+    });
+};
+
 shareWidget.mapProductsToViewModel = function (order) {
 
     shareViewModel.Products(order.Products);
@@ -58,14 +63,14 @@ shareWidget.mapProductsToViewModel = function (order) {
     ko.applyBindings(shareViewModel);
     shareWidget.setupImageFlip();
     shareWidget.runTwitterCode();
+    shareWidget.runFacebookCode();
 };
 
 shareWidget.setupImageFlip = function () {
 
     function customTitleCreate(itemElem) {
-
+        console.log(itemElem);
         var title = $('<div class="title"></div>')
-        //.append(itemElem.find('img').attr('alt'))
             .append('<a name="fb_share" type="button" share_url="' + itemElem.find('span.product-url').hide().text() + '">Share on facebook</a>')
             .append('<a href="https://twitter.com/share" class="twitter-share-button" data-count="none" data-lang="en" data-url="' + itemElem.find('span.encoded-url').hide().text() + '" data-text="' + itemElem.find('span.tweet-content').hide().text() + '">Tweet</a>');
         return title;
@@ -87,21 +92,21 @@ shareWidget.setupImageFlip = function () {
             return [
                     $.jcoverflip.animationElement(el, { left: (container.width() / 2 - 160 - 110 * offset) + 'px', top: '0' }, {}),
                     $.jcoverflip.animationElement(el.find('img'), { width: '80px', height: '80px', opacity: 0.4 }, {}),
-                    $.jcoverflip.animationElement(el.find('span.title'), { display: 'none' }, {})
+                    $.jcoverflip.animationElement(el.find('span.title'), { display: 'block', color: 'white', 'z-index': '-100' }, {})
                 ];
         },
         afterCss: function (el, container, offset) {
             return [
                     $.jcoverflip.animationElement(el, { left: (container.width() / 2 + 75 + 105 * offset) + 'px', top: '0' }, {}),
                     $.jcoverflip.animationElement(el.find('img'), { width: '80px', height: '80px', opacity: 0.4 }, {}),
-                    $.jcoverflip.animationElement(el.find('span.title'), { display: 'none' }, {})
+                    $.jcoverflip.animationElement(el.find('span.title'), { display: 'block', color: 'white', 'z-index': '-100' }, {})
                 ];
         },
         currentCss: function (el, container) {
             return [
 				$.jcoverflip.animationElement(el, { left: (container.width() / 2 - 73) + 'px', top: '0' }, {}),
 				$.jcoverflip.animationElement(el.find('img'), { opacity: 1, width: '140px', height: '140px' }, {}),
-                $.jcoverflip.animationElement(el.find('span.title'), { display: 'block' }, {})
+                $.jcoverflip.animationElement(el.find('span.title'), { display: 'block', color: '#000', 'z-index': '100' }, {})
 			];
         }
     });
