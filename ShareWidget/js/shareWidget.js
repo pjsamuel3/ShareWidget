@@ -56,7 +56,8 @@ shareWidget.setupImageFlip = function () {
         
         var title = $('<div class="title"></div>')
             //.append(itemElem.find('img').attr('alt'))
-            .append('<a name="fb_share" type="button" share_url="' + itemElem.find('span.product-url').hide().text() + '">Share on facebook</a>')
+            //.append('<a name="fb_share" type="button" share_url="' + itemElem.find('span.product-url').hide().text() + '">Share on facebook</a>')
+            .append('<div class="fb-like" data-href="' + itemElem.find('span.product-url').hide().text() + '" data-send="true" data-width="450" data-show-faces="true" data-action="recommend"></div>')
             .append('<a href="https://twitter.com/share" class="twitter-share-button" data-count="none" data-lang="en" data-url="' + itemElem.find('span.encoded-url').hide().text() + '" data-text="' + itemElem.find('span.tweet-content').hide().text() + '">Tweet</a>');
         return title;
     }

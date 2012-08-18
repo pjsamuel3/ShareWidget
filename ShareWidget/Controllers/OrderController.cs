@@ -39,7 +39,7 @@ namespace ShareWidget.Controllers
                                                                Image = "Content/BGS/Images/Prod1.jpg",
                                                                Url = url,
                                                                EncodedUrl = Server.UrlEncode(url),
-                                                               ShortUrl = ""
+                                                               ShortUrl = url
                                                            },
                                                        new Product
                                                            {
@@ -49,7 +49,7 @@ namespace ShareWidget.Controllers
                                                                Image = "Content/BGS/Images/Prod2.jpg",
                                                                Url = url,
                                                                EncodedUrl = Server.UrlEncode(url),
-                                                               ShortUrl = ""
+                                                               ShortUrl = url
                                                            },
                                                        new Product
                                                            {
@@ -59,7 +59,7 @@ namespace ShareWidget.Controllers
                                                                Image = "Content/BGS/Images/Prod3.jpg",
                                                                Url = url,
                                                                EncodedUrl = Server.UrlEncode(url),
-                                                               ShortUrl = ""
+                                                               ShortUrl = url
                                                            },
                                                        new Product
                                                            {
@@ -69,7 +69,7 @@ namespace ShareWidget.Controllers
                                                                Image = "Content/BGS/Images/Prod4.jpg",
                                                                Url = url,
                                                                EncodedUrl = Server.UrlEncode(url),
-                                                               ShortUrl = ""
+                                                               ShortUrl = url
                                                            }
                                                    },
                                     SelectedProduct =

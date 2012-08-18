@@ -28,7 +28,7 @@ shareViewModel.currentItem = ko.computed(function () {
 }, shareViewModel);
 
 var shareWidget = shareWidget || {};
-shareWidget.productsToShareUrl = "/apps/ajax/orderjson.ashx?o="; //  Order/ShareProducts//apps/ajax/orderjson.ashx?o=
+shareWidget.productsToShareUrl = "Order/ShareProducts/"; //  Order/ShareProducts//apps/ajax/orderjson.ashx?o=
 shareWidget.productFlip = null;
 
 shareWidget.getOrderedProducts = function (orderId) {

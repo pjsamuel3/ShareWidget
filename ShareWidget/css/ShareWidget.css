@@ -111,7 +111,7 @@ ul.share-products li span, ul.share-products li img, ul.share-products li a{
 #share_products_wrapper
 {
     background:transparent url('/petetest/images/template/share-lines.png') repeat-y left;
-    height: 280px;
+    height: 200px;
     margin-left: 21px;
     overflow: hidden;
     padding: 0 6px;
@@ -169,7 +169,7 @@ ul.share-products li span, ul.share-products li img, ul.share-products li a{
 #share_products_wrapper .navigation
 {
     float: left;
-    height: 280px;
+    height: 200px;
     width: 10%;
 }
 
@@ -215,9 +215,9 @@ ul.share-products li span, ul.share-products li img, ul.share-products li a{
 ul#share_products
 {
     float: left;
-    height: 250px;
+    height: 190px;
     width: 80%;
-    margin: 40px 0 0;
+    margin: 10px 0 0;
     overflow: hidden;
 }
 

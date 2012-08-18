@@ -73,6 +73,7 @@
     <Compile Include="Models\ShareProductsViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Content Include="Content\BGS\BGS_no.css" />
+    <Content Include="js\shareWidget.combined.0.2.js" />
     <Content Include="Order.htm" />
     <Content Include="Content\BGS\Images\prod3.jpg" />
     <Content Include="Content\BGS\Images\prod2.jpg" />
